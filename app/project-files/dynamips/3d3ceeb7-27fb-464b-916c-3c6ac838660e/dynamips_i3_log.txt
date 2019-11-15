@@ -1,0 +1,65 @@
+May 03 14:59:16.976 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 03 14:59:16.977 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63933.
+May 03 14:59:17.463 HYPERVISOR: exec_cmd: hypervisor version 
+May 03 14:59:17.463 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips 
+May 03 14:59:17.463 GENERAL: working_dir=C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips
+May 03 14:59:17.463 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\e903a35c-1207-497b-8b42-932a63b77823 
+May 03 14:59:17.464 GENERAL: working_dir=C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\e903a35c-1207-497b-8b42-932a63b77823
+May 03 14:59:17.465 HYPERVISOR: exec_cmd: vm create Main 5 c3725 
+May 03 14:59:17.468 VM: VM Main created.
+May 03 14:59:17.469 HYPERVISOR: exec_cmd: vm set_con_tcp_port Main 5028 
+May 03 14:59:17.469 HYPERVISOR: exec_cmd: c3725 get_mac_addr Main 
+May 03 14:59:17.469 HYPERVISOR: exec_cmd: vm set_disk0 Main 0 
+May 03 14:59:17.470 HYPERVISOR: exec_cmd: vm set_exec_area Main 64 
+May 03 14:59:17.470 HYPERVISOR: exec_cmd: vm get_status Main 
+May 03 14:59:17.470 HYPERVISOR: exec_cmd: vm set_idle_pc Main 0x602467a4 
+May 03 14:59:17.472 HYPERVISOR: exec_cmd: vm set_ios Main C:/Users/Luis/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+May 03 14:59:17.472 HYPERVISOR: exec_cmd: c3725 set_mac_addr Main c205.0d60.0000 
+May 03 14:59:17.472 HYPERVISOR: exec_cmd: vm set_nvram Main 256 
+May 03 14:59:17.473 HYPERVISOR: exec_cmd: vm slot_add_binding Main 0 16 WIC-1T 
+May 03 14:59:22.948 HYPERVISOR: exec_cmd: nio create_udp udp-d9ae21b1-a3dd-4741-88ba-205272467a1b 10012 127.0.0.1 10013 
+May 03 14:59:23.496 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Main 0 16 udp-d9ae21b1-a3dd-4741-88ba-205272467a1b 
+May 03 14:59:23.496 HYPERVISOR: exec_cmd: vm get_status Main 
+May 03 14:59:29.967 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 03 14:59:29.971 VM: VM Ghost created.
+May 03 14:59:29.972 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+May 03 14:59:29.972 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 03 14:59:29.973 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost' 
+May 03 14:59:29.974 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 03 14:59:29.974 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 03 14:59:29.975 HYPERVISOR: exec_cmd: vm start Ghost 
+May 03 14:59:30.279 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 03 14:59:30.382 VM: VM Ghost shutdown.
+May 03 14:59:30.382 VM: VM Ghost destroyed.
+May 03 14:59:30.423 HYPERVISOR: exec_cmd: vm get_status Main 
+May 03 14:59:30.424 HYPERVISOR: exec_cmd: vm set_config Main configs\i5_startup-config.cfg 
+May 03 14:59:30.425 HYPERVISOR: exec_cmd: vm start Main 
+May 03 15:13:25.189 HYPERVISOR: exec_cmd: vm get_status Main 
+May 03 15:13:25.190 HYPERVISOR: exec_cmd: vm stop Main 
+May 03 15:13:25.330 VM: VM Main shutdown.
+May 03 15:13:25.332 HYPERVISOR: exec_cmd: vm extract_config Main 
+May 03 15:13:29.924 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 03 15:13:29.929 VM: VM Ghost created.
+May 03 15:13:29.929 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+May 03 15:13:29.930 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 03 15:13:29.930 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost' 
+May 03 15:13:29.931 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 03 15:13:29.932 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 03 15:13:29.932 HYPERVISOR: exec_cmd: vm start Ghost 
+May 03 15:13:30.202 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 03 15:13:30.361 VM: VM Ghost shutdown.
+May 03 15:13:30.361 VM: VM Ghost destroyed.
+May 03 15:13:30.381 HYPERVISOR: exec_cmd: vm get_status Main 
+May 03 15:13:30.388 HYPERVISOR: exec_cmd: vm set_config Main configs\i5_startup-config.cfg 
+May 03 15:13:30.389 HYPERVISOR: exec_cmd: vm start Main 
+May 03 15:14:00.742 HYPERVISOR: exec_cmd: vm get_status Main 
+May 03 15:14:00.745 HYPERVISOR: exec_cmd: vm stop Main 
+May 03 15:14:00.875 VM: VM Main shutdown.
+May 03 15:14:00.877 HYPERVISOR: exec_cmd: vm extract_config Main 
+May 03 15:14:01.758 HYPERVISOR: exec_cmd: vm get_status Main 
+May 03 15:14:01.759 HYPERVISOR: exec_cmd: vm extract_config Main 
+May 03 15:14:01.763 HYPERVISOR: exec_cmd: vm delete Main 
+May 03 15:14:01.763 VM: VM Main destroyed.
+May 03 15:14:01.765 HYPERVISOR: exec_cmd: hypervisor stop 
+May 03 15:14:02.097 HYPERVISOR: Stopped.
+May 03 15:14:02.097 GENERAL: reset done.

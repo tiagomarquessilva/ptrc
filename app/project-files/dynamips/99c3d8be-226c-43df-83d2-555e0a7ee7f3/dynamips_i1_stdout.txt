@@ -1,0 +1,7 @@
+cygwin warning:
+  MS-DOS style path detected: C:\Users\tmsil\Desktop\Universidade\1\xC2\xBA Ano\Projeto Tem\xC3\xA1tico em Redes de Computadores\Rede\project-files\dynamips
+  Preferred POSIX equivalent is: /cygdrive/c/Users/tmsil/Desktop/Universidade/1\xC2\xBA Ano/Projeto Tem\xC3\xA1tico em Redes de Computadores/Rede/project-files/dynamips
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.
+  Consult the user's guide for more details about POSIX paths:
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames
+vm_mmap_open_file: unable to open file 'c3725_i1_rom' (No such file or directory)

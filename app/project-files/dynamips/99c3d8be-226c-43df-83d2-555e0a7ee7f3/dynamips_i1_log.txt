@@ -1,0 +1,72 @@
+May 03 14:59:16.188 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+May 03 14:59:16.190 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63925.
+May 03 14:59:16.206 HYPERVISOR: exec_cmd: hypervisor version 
+May 03 14:59:16.207 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips 
+May 03 14:59:16.336 GENERAL: working_dir=C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips
+May 03 14:59:16.336 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\a50505c3-6fd7-4cad-b408-99246179a6ea 
+May 03 14:59:16.336 GENERAL: working_dir=C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\a50505c3-6fd7-4cad-b408-99246179a6ea
+May 03 14:59:16.337 HYPERVISOR: exec_cmd: vm create Ed3 4 c3725 
+May 03 14:59:16.340 VM: VM Ed3 created.
+May 03 14:59:16.340 HYPERVISOR: exec_cmd: vm set_con_tcp_port Ed3 5022 
+May 03 14:59:16.340 HYPERVISOR: exec_cmd: c3725 get_mac_addr Ed3 
+May 03 14:59:16.341 HYPERVISOR: exec_cmd: vm set_disk0 Ed3 0 
+May 03 14:59:16.341 HYPERVISOR: exec_cmd: vm set_exec_area Ed3 64 
+May 03 14:59:16.342 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 14:59:16.342 HYPERVISOR: exec_cmd: vm set_idle_pc Ed3 0x602467a4 
+May 03 14:59:16.343 HYPERVISOR: exec_cmd: vm set_ios Ed3 C:/Users/Luis/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+May 03 14:59:16.343 HYPERVISOR: exec_cmd: c3725 set_mac_addr Ed3 c204.1a1c.0000 
+May 03 14:59:16.344 HYPERVISOR: exec_cmd: vm set_nvram Ed3 256 
+May 03 14:59:16.344 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 14:59:16.345 HYPERVISOR: exec_cmd: vm slot_add_binding Ed3 1 0 NM-4T 
+May 03 14:59:21.693 HYPERVISOR: exec_cmd: nio create_udp udp-68d8f771-aebb-4e26-8889-c2edacf06a37 10002 127.0.0.1 10003 
+May 03 14:59:22.248 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed3 0 0 udp-68d8f771-aebb-4e26-8889-c2edacf06a37 
+May 03 14:59:22.248 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 14:59:24.248 HYPERVISOR: exec_cmd: nio create_udp udp-01442c23-9b86-4d76-aa21-9143aac98d32 10022 127.0.0.1 10023 
+May 03 14:59:24.251 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed3 0 1 udp-01442c23-9b86-4d76-aa21-9143aac98d32 
+May 03 14:59:24.252 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 14:59:25.338 HYPERVISOR: exec_cmd: nio create_udp udp-e62de2d1-2aea-4f44-91b6-9dc1adc7412f 10046 127.0.0.1 10047 
+May 03 14:59:25.341 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed3 1 0 udp-e62de2d1-2aea-4f44-91b6-9dc1adc7412f 
+May 03 14:59:25.341 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 14:59:28.877 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 03 14:59:28.880 VM: VM Ghost created.
+May 03 14:59:28.881 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+May 03 14:59:28.881 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 03 14:59:28.882 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost' 
+May 03 14:59:28.882 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 03 14:59:28.883 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 03 14:59:28.883 HYPERVISOR: exec_cmd: vm start Ghost 
+May 03 14:59:29.156 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 03 14:59:29.308 VM: VM Ghost shutdown.
+May 03 14:59:29.308 VM: VM Ghost destroyed.
+May 03 14:59:29.320 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 14:59:29.320 HYPERVISOR: exec_cmd: vm set_config Ed3 configs\i4_startup-config.cfg 
+May 03 14:59:29.321 HYPERVISOR: exec_cmd: vm start Ed3 
+May 03 15:13:24.935 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 15:13:24.936 HYPERVISOR: exec_cmd: vm stop Ed3 
+May 03 15:13:25.096 VM: VM Ed3 shutdown.
+May 03 15:13:25.097 HYPERVISOR: exec_cmd: vm extract_config Ed3 
+May 03 15:13:28.808 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+May 03 15:13:28.811 VM: VM Ghost created.
+May 03 15:13:28.818 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/Luis/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+May 03 15:13:28.819 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+May 03 15:13:28.819 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost 'C:\Users\Luis\GNS3\projects\projeto\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost' 
+May 03 15:13:28.820 HYPERVISOR: exec_cmd: vm get_status Ghost 
+May 03 15:13:28.820 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+May 03 15:13:28.821 HYPERVISOR: exec_cmd: vm start Ghost 
+May 03 15:13:29.101 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+May 03 15:13:29.253 VM: VM Ghost shutdown.
+May 03 15:13:29.253 VM: VM Ghost destroyed.
+May 03 15:13:29.265 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 15:13:29.266 HYPERVISOR: exec_cmd: vm set_config Ed3 configs\i4_startup-config.cfg 
+May 03 15:13:29.266 HYPERVISOR: exec_cmd: vm start Ed3 
+May 03 15:14:00.394 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 15:14:00.396 HYPERVISOR: exec_cmd: vm stop Ed3 
+May 03 15:14:00.553 VM: VM Ed3 shutdown.
+May 03 15:14:00.555 HYPERVISOR: exec_cmd: vm extract_config Ed3 
+May 03 15:14:01.900 HYPERVISOR: exec_cmd: vm get_status Ed3 
+May 03 15:14:01.903 HYPERVISOR: exec_cmd: vm extract_config Ed3 
+May 03 15:14:01.908 HYPERVISOR: exec_cmd: vm delete Ed3 
+May 03 15:14:01.908 VM: VM Ed3 destroyed.
+May 03 15:14:01.913 HYPERVISOR: exec_cmd: hypervisor stop 
+May 03 15:14:02.392 HYPERVISOR: Stopped.
+May 03 15:14:02.392 GENERAL: reset done.
